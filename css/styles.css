@@ -1,0 +1,432 @@
+:root {
+  --iris: #4d5ae5;
+  --OCEAN: #404bbf;
+  --Navyblue: #2e2f42;
+  --GREEN: #31d0aa;
+  --SLATE: #434455;
+  --LIGHTSLATE: #8e8f99;
+  --cornflower: #e7e9fc;
+  --CLOUD: #f4f4fd;
+  --NAVYBLUEmodal: #2e2f42;
+  --GREY: #2e2f42;
+  --WHITE: #ffffff;
+  --Dairy: #fcfcfc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--SLATE);
+  background-color: var(--WHITE);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Скидання стилів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Гумові картинки */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+}
+
+/* Card set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.card-set-item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* outline: 2px solid red; */
+  /* outline-offset: -2px; */
+}
+
+.header-section {
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  margin: 0 auto;
+  margin-bottom: 72px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.nav-logo {
+  margin-right: 76px;
+}
+
+.accent {
+  color: var(--Navyblue);
+}
+
+.nv-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--Navyblue);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.nv-link:hover,
+.nv-link:focus,
+.list-item-cont:hover,
+.list-item-cont:focus {
+  color: var(--OCEAN);
+}
+
+.pf-list-bf-btn:hover,
+.pf-list-bf-btn:focus {
+  background-color: var(--OCEAN);
+  color: var(--WHITE);
+  border: 1px solid transparent;
+}
+
+.hero-butn:hover,
+.hero-butn:focus {
+  background-color: var(--OCEAN);
+  color: var(--white);
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item {
+}
+
+.addr {
+  font-style: normal;
+}
+
+.addr-list {
+  display: flex;
+  gap: 40px;
+}
+
+.addr-list-item {
+}
+
+.list-item-cont {
+  color: var(--SLATE);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.hero {
+  background-color: var(--NAVYBLUEmodal);
+  padding: 188px 0;
+}
+
+.hero-container {
+}
+
+.hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  color: var(--WHITE);
+  text-align: center;
+  font-family: inherit;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-butn {
+  display: block;
+  background-color: var(--iris);
+  color: var(--WHITE);
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+
+.pf-list-bf-btn {
+  color: var(--iris);
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  background-color: var(--CLOUD);
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+}
+
+.feature-subtitle {
+  margin-bottom: 8px;
+  color: var(--NAVYBLUEmodal);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.feature-text {
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.do-section {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.do-title {
+  color: var(--NAVYBLUEmodal);
+}
+
+.do-list {
+  display: flex;
+  gap: 24px;
+}
+
+.do-item {
+}
+
+.do-img {
+}
+
+.team {
+  background-color: var(--CLOUD);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-title {
+  color: var(--NAVYBLUEmodal);
+  font-family: inherit;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: var(--WHITE);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+}
+
+.team-subtitle {
+  color: var(--NAVYBLUEmodal);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.set-team {
+  padding: 32px 0;
+}
+.foot {
+  background-color: var(--Navyblue);
+  padding: 100px 0;
+}
+
+.foot-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.foot-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--CLOUD);
+  width: 264px;
+  font-size: 16px;
+}
+
+.accent-pf {
+  color: var(--CLOUD);
+}
+
+.pf-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.pf-title {
+}
+
+.pf-list-bf {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.pf-list-bf-item {
+  align-items: center;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--WHITE);
+}
+
+.btn .pf-list-pc {
+}
+
+.pf-list-pc-item {
+}
+
+.pf-list-pc-img {
+}
+
+.pf-list-pc-subtitle {
+  color: var(--Navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.card-pf-list {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.pf-list-pc-text {
+  color: var(--SLATE);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.foot-container {
+}
+
+.foot-accent {
+  color: var(--CLOUD);
+}
