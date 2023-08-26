@@ -718,6 +718,7 @@ section {
 .modal-btn:focus {
   border: none;
   background-color: var(--OCEAN);
+  fill: var(--WHITE);
 }
 
 .modal-icon-btn {
